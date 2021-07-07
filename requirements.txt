@@ -222,7 +222,6 @@ simpletransformers==0.61.5
 six==1.15.0
 sklearn-pandas==2.2.0
 slicer==0.0.7
--e git+https://github.com/tensorflow/models.git@a4b513b15b531a82381f3dc112e8867a3a5abf12#egg=slim&subdirectory=research\slim
 smmap==4.0.0
 SoundFile==0.10.3.post1
 soupsieve==2.2.1
