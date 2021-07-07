@@ -234,7 +234,6 @@ statsmodels==0.12.2
 streamlit==0.81.1
 subprocess32==3.5.4
 surprise==0.1
-TA-Lib @ file:///C:/Users/len/TA_Lib-0.4.20-cp38-cp38-win_amd64.whl
 tabulate==0.8.7
 tangled-up-in-unicode==0.0.7
 tensorboard==2.4.1
