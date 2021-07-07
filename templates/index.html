@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+    <div style="color:rgb(245, 14, 14)">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2 class="h2"><span>Prediction of Stock Sentiments</span></h2>
+            <h3 class="h2">Today Open Price</h3>
+            <input id="first" name="Open_price"  required="required">
+            <h3 class="h2">Today High Price</h3><input id="third" name="High_price"  required="required">
+            <h3 class="h2">Today Low Price</h3><br><input id="fourth" name="Low_price"  required="required">
+            <h3>Adj. Close</h3><br><input id="third" name="Adj_Close"  required="required">
+            <h3>Volume</h3><br><input id="third" name="Volume"  required="required">
+            <h3>Select Date and Time</h3><br><input type="datetime-local" name="Date_Time" id="Date" required="required">
+            
+            <h3>Previous Day Open price(for next day prediction)</h3><br><input id="fifth" name="popen">
+            <h3>Previous Day Close Price(for next day prediction)</h3><br><input id="sixth" name="pclose">
+            <br><br><button id="sub" type="submit " value="Day">Predict Now</button>
+            
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+</body>
+
+</html>
